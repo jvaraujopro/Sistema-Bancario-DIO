@@ -143,12 +143,12 @@ while True:
 
     if opcao == "1":
         valor = float(input("Digite o valor a depositar: "))
-        depositar(valor)
+        depositar(valor, saldo, historico, numero_transacoes)
     elif opcao == "2":
         valor = float(input("Digite o valor a sacar: "))
-        sacar(valor)
+        sacar(valor , saldo = saldo, numero_saques = numero_saques, historico = historico, numero_transacoes = numero_transacoes)
     elif opcao == "3":
-        extrato()
+        extrato(saldo, historico)
     elif opcao == "4":
         novo_usuario(clientes)
     elif opcao == "5":
